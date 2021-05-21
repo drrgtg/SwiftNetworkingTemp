@@ -12,5 +12,7 @@ target 'SwiftNetworkingTemp' do
   pod 'HandyJSON'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'SDWebImage'
   
+  pod 'MJRefresh'#, '3.4.0'
 end

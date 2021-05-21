@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,39 @@
 		FE35C5862657591100CD2C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE35C5842657591100CD2C4F /* Main.storyboard */; };
 		FE35C5882657591200CD2C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE35C5872657591200CD2C4F /* Assets.xcassets */; };
 		FE35C58B2657591200CD2C4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE35C5892657591200CD2C4F /* LaunchScreen.storyboard */; };
+		FE35C5A326575F3D00CD2C4F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59326575F3D00CD2C4F /* Constants.swift */; };
+		FE35C5A426575F3D00CD2C4F /* AuthCredentialManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59426575F3D00CD2C4F /* AuthCredentialManger.swift */; };
+		FE35C5A526575F3D00CD2C4F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59526575F3D00CD2C4F /* APIError.swift */; };
+		FE35C5A626575F3D00CD2C4F /* RequestRetryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59626575F3D00CD2C4F /* RequestRetryHandler.swift */; };
+		FE35C5A726575F3D00CD2C4F /* ResponseMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59726575F3D00CD2C4F /* ResponseMappable.swift */; };
+		FE35C5A826575F3D00CD2C4F /* Error+isRequestCancelled.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59826575F3D00CD2C4F /* Error+isRequestCancelled.swift */; };
+		FE35C5A926575F3D00CD2C4F /* FullImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59926575F3D00CD2C4F /* FullImageUrl.swift */; };
+		FE35C5AA26575F3D00CD2C4F /* AuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59B26575F3D00CD2C4F /* AuthPlugin.swift */; };
+		FE35C5AB26575F3D00CD2C4F /* GLCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59C26575F3D00CD2C4F /* GLCrypto.swift */; };
+		FE35C5AC26575F3D00CD2C4F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59D26575F3D00CD2C4F /* NetworkService.swift */; };
+		FE35C5AD26575F3D00CD2C4F /* GlobalFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59E26575F3D00CD2C4F /* GlobalFuncs.swift */; };
+		FE35C5AE26575F3D00CD2C4F /* kConst_json.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C59F26575F3D00CD2C4F /* kConst_json.swift */; };
+		FE35C5AF26575F3D00CD2C4F /* BaseURLConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5A026575F3D00CD2C4F /* BaseURLConfig.swift */; };
+		FE35C5B026575F3D00CD2C4F /* Observable+ProgressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5A126575F3D00CD2C4F /* Observable+ProgressResponse.swift */; };
+		FE35C5B126575F3D00CD2C4F /* ClientInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5A226575F3D00CD2C4F /* ClientInfoService.swift */; };
+		FE35C5F42657615D00CD2C4F /* GloableAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5F32657615D00CD2C4F /* GloableAPI.swift */; };
+		FE35C5F62657632100CD2C4F /* LPRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5F52657632100CD2C4F /* LPRequestService.swift */; };
+		FE35C60B2657639500CD2C4F /* UIButton+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5F82657639500CD2C4F /* UIButton+Loading.swift */; };
+		FE35C60C2657639500CD2C4F /* UIImage+ScaleToShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5F92657639500CD2C4F /* UIImage+ScaleToShare.swift */; };
+		FE35C60E2657639500CD2C4F /* UIImage+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5FB2657639500CD2C4F /* UIImage+QRCode.swift */; };
+		FE35C60F2657639500CD2C4F /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5FC2657639500CD2C4F /* String+Image.swift */; };
+		FE35C6102657639500CD2C4F /* UIButton+IncreaseHitArea.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5FD2657639500CD2C4F /* UIButton+IncreaseHitArea.m */; };
+		FE35C6122657639500CD2C4F /* UIScrollView+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5FF2657639500CD2C4F /* UIScrollView+Refresh.swift */; };
+		FE35C6132657639500CD2C4F /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C6002657639500CD2C4F /* UINavigationController+Ext.swift */; };
+		FE35C6142657639500CD2C4F /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C6012657639500CD2C4F /* UIColor+Ext.swift */; };
+		FE35C6152657639500CD2C4F /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C6022657639500CD2C4F /* UIViewController+Rx.swift */; };
+		FE35C6162657639500CD2C4F /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C6032657639500CD2C4F /* UIFont+Custom.swift */; };
+		FE35C6172657639500CD2C4F /* JXPagingListSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C6042657639500CD2C4F /* JXPagingListSupport.swift */; };
+		FE35C6182657639500CD2C4F /* String+Sizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C6052657639500CD2C4F /* String+Sizing.swift */; };
+		FE35C6192657639500CD2C4F /* UIEdgeInsets+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C6072657639500CD2C4F /* UIEdgeInsets+Convenience.swift */; };
+		FE35C61A2657639500CD2C4F /* UIDevice+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C6082657639500CD2C4F /* UIDevice+Ext.swift */; };
+		FE35C61B2657639500CD2C4F /* UIImageView+Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C6092657639500CD2C4F /* UIImageView+Url.swift */; };
+		FE35C61C2657639500CD2C4F /* UIViewController+BackButtonHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35C60A2657639500CD2C4F /* UIViewController+BackButtonHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +61,40 @@
 		FE35C5872657591200CD2C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE35C58A2657591200CD2C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE35C58C2657591200CD2C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE35C59326575F3D00CD2C4F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FE35C59426575F3D00CD2C4F /* AuthCredentialManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCredentialManger.swift; sourceTree = "<group>"; };
+		FE35C59526575F3D00CD2C4F /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		FE35C59626575F3D00CD2C4F /* RequestRetryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestRetryHandler.swift; sourceTree = "<group>"; };
+		FE35C59726575F3D00CD2C4F /* ResponseMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMappable.swift; sourceTree = "<group>"; };
+		FE35C59826575F3D00CD2C4F /* Error+isRequestCancelled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+isRequestCancelled.swift"; sourceTree = "<group>"; };
+		FE35C59926575F3D00CD2C4F /* FullImageUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageUrl.swift; sourceTree = "<group>"; };
+		FE35C59B26575F3D00CD2C4F /* AuthPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPlugin.swift; sourceTree = "<group>"; };
+		FE35C59C26575F3D00CD2C4F /* GLCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLCrypto.swift; sourceTree = "<group>"; };
+		FE35C59D26575F3D00CD2C4F /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FE35C59E26575F3D00CD2C4F /* GlobalFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFuncs.swift; sourceTree = "<group>"; };
+		FE35C59F26575F3D00CD2C4F /* kConst_json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kConst_json.swift; sourceTree = "<group>"; };
+		FE35C5A026575F3D00CD2C4F /* BaseURLConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseURLConfig.swift; sourceTree = "<group>"; };
+		FE35C5A126575F3D00CD2C4F /* Observable+ProgressResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ProgressResponse.swift"; sourceTree = "<group>"; };
+		FE35C5A226575F3D00CD2C4F /* ClientInfoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientInfoService.swift; sourceTree = "<group>"; };
+		FE35C5F32657615D00CD2C4F /* GloableAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GloableAPI.swift; sourceTree = "<group>"; };
+		FE35C5F52657632100CD2C4F /* LPRequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPRequestService.swift; sourceTree = "<group>"; };
+		FE35C5F82657639500CD2C4F /* UIButton+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Loading.swift"; sourceTree = "<group>"; };
+		FE35C5F92657639500CD2C4F /* UIImage+ScaleToShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ScaleToShare.swift"; sourceTree = "<group>"; };
+		FE35C5FB2657639500CD2C4F /* UIImage+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+QRCode.swift"; sourceTree = "<group>"; };
+		FE35C5FC2657639500CD2C4F /* String+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
+		FE35C5FD2657639500CD2C4F /* UIButton+IncreaseHitArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+IncreaseHitArea.m"; sourceTree = "<group>"; };
+		FE35C5FF2657639500CD2C4F /* UIScrollView+Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Refresh.swift"; sourceTree = "<group>"; };
+		FE35C6002657639500CD2C4F /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
+		FE35C6012657639500CD2C4F /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		FE35C6022657639500CD2C4F /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		FE35C6032657639500CD2C4F /* UIFont+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
+		FE35C6042657639500CD2C4F /* JXPagingListSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPagingListSupport.swift; sourceTree = "<group>"; };
+		FE35C6052657639500CD2C4F /* String+Sizing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Sizing.swift"; sourceTree = "<group>"; };
+		FE35C6062657639500CD2C4F /* UIButton+IncreaseHitArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+IncreaseHitArea.h"; sourceTree = "<group>"; };
+		FE35C6072657639500CD2C4F /* UIEdgeInsets+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Convenience.swift"; sourceTree = "<group>"; };
+		FE35C6082657639500CD2C4F /* UIDevice+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ext.swift"; sourceTree = "<group>"; };
+		FE35C6092657639500CD2C4F /* UIImageView+Url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Url.swift"; sourceTree = "<group>"; };
+		FE35C60A2657639500CD2C4F /* UIViewController+BackButtonHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackButtonHandler.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +123,6 @@
 				E60851A9CDCDF30209A69599 /* Pods-SwiftNetworkingTemp.debug.xcconfig */,
 				7AB807EA70B117CE8610017C /* Pods-SwiftNetworkingTemp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,7 +147,10 @@
 		FE35C57D2657591100CD2C4F /* SwiftNetworkingTemp */ = {
 			isa = PBXGroup;
 			children = (
+				FE35C59226575F3D00CD2C4F /* Tools */,
 				FE35C57E2657591100CD2C4F /* AppDelegate.swift */,
+				FE35C5F52657632100CD2C4F /* LPRequestService.swift */,
+				FE35C5F32657615D00CD2C4F /* GloableAPI.swift */,
 				FE35C5802657591100CD2C4F /* SceneDelegate.swift */,
 				FE35C5822657591100CD2C4F /* ViewController.swift */,
 				FE35C5842657591100CD2C4F /* Main.storyboard */,
@@ -90,6 +159,61 @@
 				FE35C58C2657591200CD2C4F /* Info.plist */,
 			);
 			path = SwiftNetworkingTemp;
+			sourceTree = "<group>";
+		};
+		FE35C59226575F3D00CD2C4F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C5F72657639500CD2C4F /* UIKit */,
+				FE35C59326575F3D00CD2C4F /* Constants.swift */,
+				FE35C59426575F3D00CD2C4F /* AuthCredentialManger.swift */,
+				FE35C59526575F3D00CD2C4F /* APIError.swift */,
+				FE35C59626575F3D00CD2C4F /* RequestRetryHandler.swift */,
+				FE35C59726575F3D00CD2C4F /* ResponseMappable.swift */,
+				FE35C59826575F3D00CD2C4F /* Error+isRequestCancelled.swift */,
+				FE35C59926575F3D00CD2C4F /* FullImageUrl.swift */,
+				FE35C59A26575F3D00CD2C4F /* MoyaPlugins */,
+				FE35C59C26575F3D00CD2C4F /* GLCrypto.swift */,
+				FE35C59D26575F3D00CD2C4F /* NetworkService.swift */,
+				FE35C59E26575F3D00CD2C4F /* GlobalFuncs.swift */,
+				FE35C59F26575F3D00CD2C4F /* kConst_json.swift */,
+				FE35C5A026575F3D00CD2C4F /* BaseURLConfig.swift */,
+				FE35C5A126575F3D00CD2C4F /* Observable+ProgressResponse.swift */,
+				FE35C5A226575F3D00CD2C4F /* ClientInfoService.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FE35C59A26575F3D00CD2C4F /* MoyaPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C59B26575F3D00CD2C4F /* AuthPlugin.swift */,
+			);
+			path = MoyaPlugins;
+			sourceTree = "<group>";
+		};
+		FE35C5F72657639500CD2C4F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C5F82657639500CD2C4F /* UIButton+Loading.swift */,
+				FE35C5F92657639500CD2C4F /* UIImage+ScaleToShare.swift */,
+				FE35C5FB2657639500CD2C4F /* UIImage+QRCode.swift */,
+				FE35C5FC2657639500CD2C4F /* String+Image.swift */,
+				FE35C5FD2657639500CD2C4F /* UIButton+IncreaseHitArea.m */,
+				FE35C5FF2657639500CD2C4F /* UIScrollView+Refresh.swift */,
+				FE35C6002657639500CD2C4F /* UINavigationController+Ext.swift */,
+				FE35C6012657639500CD2C4F /* UIColor+Ext.swift */,
+				FE35C6022657639500CD2C4F /* UIViewController+Rx.swift */,
+				FE35C6032657639500CD2C4F /* UIFont+Custom.swift */,
+				FE35C6042657639500CD2C4F /* JXPagingListSupport.swift */,
+				FE35C6052657639500CD2C4F /* String+Sizing.swift */,
+				FE35C6062657639500CD2C4F /* UIButton+IncreaseHitArea.h */,
+				FE35C6072657639500CD2C4F /* UIEdgeInsets+Convenience.swift */,
+				FE35C6082657639500CD2C4F /* UIDevice+Ext.swift */,
+				FE35C6092657639500CD2C4F /* UIImageView+Url.swift */,
+				FE35C60A2657639500CD2C4F /* UIViewController+BackButtonHandler.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +330,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE35C60F2657639500CD2C4F /* String+Image.swift in Sources */,
+				FE35C60B2657639500CD2C4F /* UIButton+Loading.swift in Sources */,
+				FE35C5A626575F3D00CD2C4F /* RequestRetryHandler.swift in Sources */,
+				FE35C5B026575F3D00CD2C4F /* Observable+ProgressResponse.swift in Sources */,
 				FE35C5832657591100CD2C4F /* ViewController.swift in Sources */,
+				FE35C5AF26575F3D00CD2C4F /* BaseURLConfig.swift in Sources */,
+				FE35C6152657639500CD2C4F /* UIViewController+Rx.swift in Sources */,
+				FE35C6142657639500CD2C4F /* UIColor+Ext.swift in Sources */,
+				FE35C61B2657639500CD2C4F /* UIImageView+Url.swift in Sources */,
+				FE35C5A726575F3D00CD2C4F /* ResponseMappable.swift in Sources */,
+				FE35C5A826575F3D00CD2C4F /* Error+isRequestCancelled.swift in Sources */,
+				FE35C5B126575F3D00CD2C4F /* ClientInfoService.swift in Sources */,
 				FE35C57F2657591100CD2C4F /* AppDelegate.swift in Sources */,
+				FE35C5AB26575F3D00CD2C4F /* GLCrypto.swift in Sources */,
 				FE35C5812657591100CD2C4F /* SceneDelegate.swift in Sources */,
+				FE35C6102657639500CD2C4F /* UIButton+IncreaseHitArea.m in Sources */,
+				FE35C5AE26575F3D00CD2C4F /* kConst_json.swift in Sources */,
+				FE35C61A2657639500CD2C4F /* UIDevice+Ext.swift in Sources */,
+				FE35C6192657639500CD2C4F /* UIEdgeInsets+Convenience.swift in Sources */,
+				FE35C5AA26575F3D00CD2C4F /* AuthPlugin.swift in Sources */,
+				FE35C5A326575F3D00CD2C4F /* Constants.swift in Sources */,
+				FE35C5F62657632100CD2C4F /* LPRequestService.swift in Sources */,
+				FE35C60C2657639500CD2C4F /* UIImage+ScaleToShare.swift in Sources */,
+				FE35C5A426575F3D00CD2C4F /* AuthCredentialManger.swift in Sources */,
+				FE35C61C2657639500CD2C4F /* UIViewController+BackButtonHandler.swift in Sources */,
+				FE35C5F42657615D00CD2C4F /* GloableAPI.swift in Sources */,
+				FE35C6122657639500CD2C4F /* UIScrollView+Refresh.swift in Sources */,
+				FE35C5A926575F3D00CD2C4F /* FullImageUrl.swift in Sources */,
+				FE35C5AC26575F3D00CD2C4F /* NetworkService.swift in Sources */,
+				FE35C6182657639500CD2C4F /* String+Sizing.swift in Sources */,
+				FE35C6132657639500CD2C4F /* UINavigationController+Ext.swift in Sources */,
+				FE35C6172657639500CD2C4F /* JXPagingListSupport.swift in Sources */,
+				FE35C60E2657639500CD2C4F /* UIImage+QRCode.swift in Sources */,
+				FE35C5AD26575F3D00CD2C4F /* GlobalFuncs.swift in Sources */,
+				FE35C6162657639500CD2C4F /* UIFont+Custom.swift in Sources */,
+				FE35C5A526575F3D00CD2C4F /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

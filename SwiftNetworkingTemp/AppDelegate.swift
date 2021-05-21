@@ -14,6 +14,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Reqest demo
+        
+        
+        /*
+         
+         let api = LPRequestService.AlogonLogon(name, password: password)
+         Network.request(api, dataType: JSON.self, showErrorMsg: true)
+         .do(onSuccess: { [weak self] (data) in
+             guard let token = data.data?.string else {
+                 return
+             }
+             print(token)
+         }, onError: {[weak self] (err) in
+             Toast.hideLoading(from: self?.view)
+         }, onDispose: { [weak self] in
+         })
+         .subscribe()
+         .disposed(by: disposeBag)
+         */
         return true
     }
 
